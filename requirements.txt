@@ -1,7 +1,8 @@
 langchain
+langchain-classic
 langchain-groq
 langchain-community
+langchain-huggingface
+pdfplumber
 chromadb
-pypdf
 python-dotenv
-sentence-transformers
