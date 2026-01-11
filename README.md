@@ -19,7 +19,7 @@ This is a Retrieval-Augmented Generation (RAG) system built with **LangChain** a
 
 1. **Clone the repository:**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/rafiq9090/RAG-learning.git
    cd RAG_project
    ```
 
