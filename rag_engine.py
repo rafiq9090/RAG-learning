@@ -82,6 +82,6 @@ if __name__ == "__main__":
     engine = RAGEngine("data/research_paper.pdf")
     
     # Test query from Table 1
-    query = "Compare the Answer Relevancy of Token Chunking versus Recursive Chunking as listed in the paper."
+    query = "What is the best chunking method for accuracy?"
     answer = engine.ask(query)
-    print(f"\nAI Response: {answer}")
+    print(f"\nAI Response: {answer}") 
