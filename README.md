@@ -46,6 +46,28 @@ This is a Retrieval-Augmented Generation (RAG) system built with **LangChain** a
    GROQ_API_KEY=your_gsk_key_here
    ```
 
+3. Optional tuning parameters:
+   ```env
+   # Model used by Groq
+   GROQ_MODEL=llama-3.3-70b-versatile
+
+   # Vector DB persistence
+   CHROMA_DIR=./vector_db
+
+   # Chunking controls
+   CHUNK_SIZE=1200
+   CHUNK_OVERLAP=200
+
+   # Retrieval controls
+   RETRIEVER_K=6
+   RETRIEVER_SCORE_THRESHOLD=0.2
+
+   # Answer safety
+   MIN_CONTEXT_CHARS=200
+   CITE_SOURCES=true
+   NO_ANSWER_RESPONSE=I don't know based on the provided documents.
+   ```
+
 ## Usage
 
 1. **Prepare your Data:**
@@ -63,6 +85,14 @@ This is a Retrieval-Augmented Generation (RAG) system built with **LangChain** a
        engine = RAGEngine("data/research_paper.pdf")
        query = "Your question here..." 
        print(engine.ask(query))
+   ```
+
+4. **Citations:**
+   Answers include page citations when available:
+   ```text
+   AI Response: ...
+   
+   Sources: research_paper.pdf p.3, research_paper.pdf p.5
    ```
 
 ## Sample Demo

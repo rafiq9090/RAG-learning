@@ -1,6 +1,7 @@
 langchain
 langchain-classic
 langchain-groq
+langchain-chroma
 langchain-community
 langchain-huggingface
 pdfplumber
