@@ -198,6 +198,6 @@ if __name__ == "__main__":
     engine = RAGEngine("data/research_paper.pdf")
 
     # Test query from Table 1
-    query = "What is the best chunking method for accuracy?"
+    query = "According to Table 1, what is the Context Precision of BERT Chunking?"
     answer = engine.ask(query)
     print(f"\nAI Response: {answer}")

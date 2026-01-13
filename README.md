@@ -104,14 +104,33 @@ Here is an example of the engine extracting precise data from a table in the res
 
 **System Output:**
 ```text
-AI Response: According to the table, the Context Precision of BERT Chunking is 92%.
+AI Response: According to Table 1, the Context Precision of BERT Chunking is 92%.
 ```
 **Input Query:**
 > "What is the best chunking method for accuracy?"
 
 **System Output:**
 ```text
-AI Response: According to the provided context, BERT Chunking has the highest accuracy, with a precision of 92%, recall of 85%, relevancy of 89%, and faithfulness of 94%. Therefore, BERT Chunking appears to be the best chunking method for accuracy among the three methods compared (Recursive Chunking, BERT Chunking, and Token Chunking).
+AI Response: According to the provided context, the best chunking method for accuracy is BERT Chunking, with a precision of 92%, recall of 85%, and relevancy of 89% [8]. It also has the highest answer faithfulness score of 94% among the three methods compared in Table 1. 
+
+Here is the comparison:
+- BERT Chunking: 92% precision, 85% recall, 89% relevancy, 94% answer faithfulness
+- Recursive Chunking: 85% precision, 78% recall, 82% relevancy, 88% answer faithfulness
+- Token Chunking: 76% precision, 82% recall, 79% relevancy, 81% answer faithfulness
+
+Therefore, based on the provided data, BERT Chunking appears to be the most accurate chunking method.
+
+Sources: research_paper.pdf p.2, research_paper.pdf p.3
+```
+
+**Input Query:**
+> "Which method has the highest faithfulness score?"
+
+**System Output:**
+```text
+AI Response: The highest faithfulness score is 94%, achieved by BERT Chunking.
+
+Sources: research_paper.pdf p.3
 ```
 
 ## Structure
