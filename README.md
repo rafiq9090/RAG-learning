@@ -111,14 +111,16 @@ AI Response: According to Table 1, the Context Precision of BERT Chunking is 92%
 
 **System Output:**
 ```text
-AI Response: According to the provided context, the best chunking method for accuracy is BERT Chunking, with a precision of 92%, recall of 85%, and relevancy of 89% [8]. It also has the highest answer faithfulness score of 94% among the three methods compared in Table 1. 
+AI Response: According to the provided context, the best chunking method for accuracy is BERT Chunking, with a precision of 92%, recall of 85%, and relevancy of 89% [8]. It also has the highest answer faithfulness score of 94% among the three methods compared. 
 
-Here is the comparison:
-- BERT Chunking: 92% precision, 85% recall, 89% relevancy, 94% answer faithfulness
-- Recursive Chunking: 85% precision, 78% recall, 82% relevancy, 88% answer faithfulness
-- Token Chunking: 76% precision, 82% recall, 79% relevancy, 81% answer faithfulness
+Here is the comparison table for reference:
+Method | Precision | Recall | Relevancy | Answer Faithfulness
+------|----------|--------|------------|-------------------
+BERT Chunking | 92%    | 85%    | 89%       | 94%
+Recursive Chunking | 85% | 78%    | 82%       | 88%
+Token Chunking | 76% | 82%    | 79%       | 81% 
 
-Therefore, based on the provided data, BERT Chunking appears to be the most accurate chunking method.
+Please note that the accuracy of the chunking method may depend on the specific use case and system requirements. [8]
 
 Sources: research_paper.pdf p.2, research_paper.pdf p.3
 ```
